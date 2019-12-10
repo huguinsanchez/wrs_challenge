@@ -4,7 +4,7 @@ from geometry_msgs.msg import Pose
 from sensor_msgs.msg import Image, PointCloud2
 import cv2
 from cv_bridge import CvBridge
-import pcl
+#import pcl
 import ros_numpy
 import numpy as np
 global centroid_person
