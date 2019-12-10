@@ -1,4 +1,4 @@
-# Project Title
+# Simple Human Follower Template
 
 The object of this repository is to create a template that the Junior students can use for developing the code for the Junior Category - Home Robot Challenge 2020
 
@@ -62,5 +62,5 @@ Now you just have to look for the comments in the nodes controlToPostion.py and 
 
 ## Authors
 
-* **Victor Hugo Sanchez** - *Initial work* - [PurpleBooth](https://github.com/huguinsanchez)
+* **Victor Hugo Sanchez** - *Initial work* - [huguinsanchez](https://github.com/huguinsanchez)
 
