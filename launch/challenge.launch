@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<node name="kinect_reader" pkg="wrs_challenge" type="kinect_reader.py" output="screen"/>
+    <node name="control_to_person" pkg="wrs_challenge" type="controlToPostion.py" output="screen"/>
+
+</launch>
