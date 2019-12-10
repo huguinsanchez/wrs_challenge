@@ -42,10 +42,10 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Running the tests
 
-For create a test of the template working you should launch minimal.launch ans freenect launch on the turtlebot
+For create a test of the template working you should launch minimal launch and 3d sensor launch on the turtlebot
 ```
 roslaunch turtlebot_bringup minimal.launch
-roslaunch freenect_launch freenect.launch
+roslaunch fturtlebot_bringup 3dsensor.launch
 ```
 
 ### Break down into end to end tests

@@ -67,8 +67,8 @@ def main():
 	print "Initializing kinect_reader"
 	rospy.init_node('kinect_reader', anonymous=True)
 	rospy.Subscriber("/camera/rgb/image_rect_color", Image , callback_rgb_rect)
-	rospy.Subscriber("/camera/depth/image_rect", Image, callback_depth_rect)
-	rospy.Subscriber("/camera/depth/points", PointCloud2, callback_point_clod)
+	rospy.Subscriber("/camera/depth_registered/image", Image, callback_depth_rect)
+	rospy.Subscriber("/camera/depth_registered/points", PointCloud2, callback_point_clod)
 	pub_centroid=rospy.Publisher('/centroid_person', Pose, queue_size=1)
 	loop=rospy.Rate(10)
 
