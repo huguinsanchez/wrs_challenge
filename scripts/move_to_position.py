@@ -41,10 +41,14 @@ def pub_new_goal(x,y,theta):
 	loop.sleep()
 	goal_reached=0
 	rospy.sleep(5.)
-	while goal_reached!="3":
+	while goal_reached!="3" and not rospy.is_shutdown():
 		loop.sleep()
 	print"end"
-	rospy.sleep(2.)
+	rospy.sleep(5.)
+	if(goal_reached=="3"):
+		return True
+	else:
+		return False
 
 
 def main():
@@ -57,9 +61,9 @@ def main():
 
 	rospy.sleep(2.)
 
-	pub_new_goal(0.73,1.49,0.88)
-	while not rospy.is_shutdown():
-		loop.sleep()
+	pub_new_goal(-0.54,0.00,0.00)
+	#pub_new_goal(-0.27,1.40,0.00)
+	
 
 
 
